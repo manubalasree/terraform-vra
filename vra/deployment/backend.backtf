@@ -1,0 +1,9 @@
+terraform {
+  backend "s3" {
+    profile              = "prodops-sandbox"
+    bucket               = "terraform-s3-backend-639232547460"
+    workspace_key_prefix = "us-east-2/mbalasre-vra-demo"
+    key                  = "shared-state"
+    region               = "us-east-2"
+  }
+}
